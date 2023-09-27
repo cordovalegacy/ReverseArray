@@ -1,20 +1,21 @@
 //to reverse an array you do not need a nested for loop
+//to reverse a string you must concatenate the string to a new variable since a string is immutable
 
-const arr1 = [1, 2, 4, 6, 8, 9, 3, 4]
-const arr2 = [4, 6, 3, 2, 3, 6, 9, 4, 11]
+const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const arr2 = ["string1", "string2", "string3"]
 
-const reverseArr2 = (array) => {
-    console.log("1: ", array)
+const reverse = (input) => {
+    console.log("before: ", input)
     let temp = 0
-    for(let i = 0; i < array.length / 2; i++){
-        let j = array.length - 1 - i
-        temp = array[j]
-        array[j] = array[i]
-        array[i] = temp
+    for (let i = 0; i < input.length / 2; i++) {
+        let j = input.length - 1 - i
+        temp = input[j]
+        input[j] = input[i]
+        input[i] = temp
         temp = 0
     }
-    console.log("2: ", array)
+    console.log("after: ", input)
 }
 
-reverseArr2(arr1)
-reverseArr2(arr2)
+// reverse(arr1)
+reverse(arr2)
