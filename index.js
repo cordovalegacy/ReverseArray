@@ -1,6 +1,6 @@
 //to reverse an array you do not need a nested for loop
 //to reverse a string you must concatenate the string to a new variable since a string is immutable
-//daily push 3
+//daily push 4
 const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const arr2 = ["string1", "string2", "string3"]
 
